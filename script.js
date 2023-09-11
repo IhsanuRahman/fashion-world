@@ -17,6 +17,27 @@ scrollContainer.forEach(element => element.addEventListener("wheel", (evt) => {
 
 }));
 
+var h = $('.header').height();
+document.querySelector(".main").addEventListener("wheel", (evt) => {
+   
+    
+    if (evt.deltaY<0) {
+       $(".header").css('top' , "0");
+    }else if(evt.deltaY>0){
+    $(".header").css('top' ,"-60px");
+    }
+   
+
+})
+$('#close-bt-searchings').on('click',function(){
+    $('.header').css('opacity', '1')
+    $('.main').css('opacity', '1')
+    $('#searchings').toggle()       
+})
+$('#close-bt-drower').on('click',function(){
+        $('.drower').toggle();
+        $('.main').css('opacity', '1');
+})
 $("#arrow-button-left").on('click',function () {
   
     console.log(h)

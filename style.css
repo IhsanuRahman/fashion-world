@@ -106,10 +106,7 @@ body{
   
     
 }
-#arrow-button-left{}
-#arrow-button-right{
 
-}
 @media only screen and (max-width: 580px){
     
     
@@ -154,7 +151,9 @@ body{
 }
 .profile{
     height: 50px;
-    margin:  10px 0 0 10px;
+    margin:  20px 0 0 20px;
+    
+    
 }
 .drower{
     display: none;
@@ -191,4 +190,22 @@ body{
 }
 .footer-text{
     color: blue;
+}
+.close-bt{
+    border: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0;
+}
+.close-bt-search{
+    border: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    position: absolute;
+    top: -25px;
+    left: -35px;
+
 }
