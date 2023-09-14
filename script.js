@@ -8,14 +8,14 @@ var imgLink = [
     ]
 var i=0
 $(".banner").attr('src',imgLink[i])
-// var watchSection = document.querySelectorAll(".list");
+var watchSection = document.querySelectorAll(".list");
 
-// watchSection.forEach(element => element.addEventListener("wheel", (evt)  =>{
+watchSection.forEach(element => element.addEventListener("wheel", (evt)  =>{
     
-//     evt.preventDefault();
-//      element.scrollLeft += evt.deltaY;
+    evt.preventDefault();
+     element.scrollLeft += evt.deltaY;
 
-// }));
+}));
 
 
 var h = $('.header').height();
