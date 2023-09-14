@@ -33,7 +33,7 @@ body{
 }
 
 .card-img-top{
-   max-height: 150px;
+   height: 150px;
    width: 250px;
 }
 #header-list {
@@ -75,8 +75,8 @@ body{
 
 
 .banner {
-    
-    max-height: 400px;
+    min-width: 66%;
+    max-height: 420px;
     margin-top: 50px;
     position: relative;
     
@@ -106,8 +106,7 @@ body{
   
     
 }
-
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 576px){
     
     
     .arrow-button{

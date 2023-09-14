@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <title>fashion world</title>
 </head>
 
 <body>
-    <nav class="header">
+    <nav class="header" id="header">
         <a href="">
             <h4 href="" class="brand-name">Fashion World</h4>
         </a>
@@ -19,9 +22,10 @@
 
             <li id="search-bt"><i class="fa-solid fa-magnifying-glass header-list-item "></i></li>
             <li id="favourite"><i class="fa-regular fa-star header-list-item d-none d-sm-block"></i></li>
-            <li><img class="account"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Account.svg/512px-Microsoft_Account.svg.png?20170218203212"
-                    alt=""></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="30"  fill="currentColor" class="bi bi-person-circle account" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
         </ul>
     </nav>
     <section id="searchings">
@@ -37,9 +41,10 @@
 
     <section class="drower">
         <button class="close-bt" id="close-bt-drower"><i class="fa-solid fa-chevron-left"></i></button>
-        <img class="profile"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Account.svg/512px-Microsoft_Account.svg.png?20170218203212"
-            alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50"  fill="currentColor" class="bi bi-person-circle profile"  viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg>
         <h4 class="profile">name</h4>
         <hr>
         <ul type="none" id="drower-list">
@@ -50,20 +55,81 @@
             <li id="drower-list-item"><i class="fa-solid fa-arrow-right-from-bracket li-icon"></i>log out</li>
         </ul>
     </section>
-    <section class="main ">
+    <section class="main " id="main">
         <section class="banner-section">
             <button class="arrow-button " style="margin-right: 40px;" id="arrow-button-left">
                 <i class="fa  button fa-solid fa-arrow-left"></i></button>
-            <img class="banner col-12 col-sm-8 " alt="loading...." src="">
+            <img class="banner col-12 col-sm-8 " alt="loading...." src="" id="banner">
             <button class="arrow-button " style="margin-left: 40px;" id="arrow-button-right">
                 <i class="fa  button fa-solid fa-arrow-right"></i></button>
         </section>
         <hr>
         <section class=" products-sec">
             <p class="subtitle ">watchs</p>
-            <ul style="list-style: none;" class="d-flex flex-row flex-nowrap overflow-x-scroll overflow-y-hidden list">
+            
+            <ul style="list-style: none;" class="d-flex flex-row flex-nowrap overflow-x-scroll overflow-y-hidden list" id="list">
                 <li class="list-item">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 13rem;">
+                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><b>watch</b><br>$100 <br>
+                                some about item
+                            </p>
+                        </div>
+                    </div>
+                </li><li class="list-item">
+                    <div class="card" style="width: 13rem;">
+                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><b>watch</b><br>$100 <br>
+                                some about item
+                            </p>
+                        </div>
+                    </div>
+                </li><li class="list-item">
+                    <div class="card" style="width: 13rem;">
+                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><b>watch</b><br>$100 <br>
+                                some about item
+                            </p>
+                        </div>
+                    </div>
+                </li><li class="list-item">
+                    <div class="card" style="width: 13rem;">
+                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><b>watch</b><br>$100 <br>
+                                some about item
+                            </p>
+                        </div>
+                    </div>
+                </li><li class="list-item">
+                    <div class="card" style="width: 13rem;">
+                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><b>watch</b><br>$100 <br>
+                                some about item
+                            </p>
+                        </div>
+                    </div>
+                </li><li class="list-item">
+                    <div class="card" style="width: 13rem;">
+                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><b>watch</b><br>$100 <br>
+                                some about item
+                            </p>
+                        </div>
+                    </div>
+                </li><li class="list-item">
+                    <div class="card" style="width: 13rem;">
                         <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
                             class="card-img-top" alt="...">
                         <div class="card-body">
@@ -74,73 +140,7 @@
                     </div>
                 </li>
                 <li class="list-item">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><b>watch</b><br>$100 <br>
-                                some about item
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><b>watch</b><br>$100 <br>
-                                some about item
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><b>watch</b><br>$100 <br>
-                                some about item
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><b>watch</b><br>$100 <br>
-                                some about item
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><b>watch</b><br>$100 <br>
-                                some about item
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><b>watch</b><br>$100 <br>
-                                some about item
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 13rem;">
                         <img src="https://img.freepik.com/free-photo/elegant-watch-with-silver-golden-chain-isolated_181624-27080.jpg?size=626&ext=jpg&ga=GA1.2.5292792.1694162747&semt=sph "
                             class="card-img-top" alt="...">
                         <div class="card-body">
@@ -155,7 +155,7 @@
         <p class="subtitle ">rings</p>
         <ul style="list-style: none;" class="d-flex flex-row flex-nowrap overflow-x-scroll overflow-y-hidden list">
             <li class="list-item">
-                <div class="card">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -166,7 +166,7 @@
                 </div>
             </li>
             <li class="list-item">
-                <div class="card">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -175,9 +175,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -186,9 +185,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -197,9 +195,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -208,9 +205,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -219,9 +215,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -230,9 +225,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -241,9 +235,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -252,9 +245,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -263,53 +255,8 @@
                         </p>
                     </div>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>ring</b><br>$60 <br>
-                            some about item
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>ring</b><br>$60 <br>
-                            some about item
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>ring</b><br>$60 <br>
-                            some about item
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><b>ring</b><br>$60 <br>
-                            some about item
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="list-item">
-                <div class="card">
+            </li><li class="list-item">
+                <div class="card" style="width: 13rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HKOk_PnfvnMkSlMY_xvZU3YkKRXj0gJ8kA&usqp=CAU "
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -329,16 +276,10 @@
             &nbsp;&nbsp;&nbsp;&nbsp; linkedin</h6>
     </section>
 </body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-<link rel="stylesheet" href="style.css">
+
 <script src="https://kit.fontawesome.com/35260cb9f2.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>   
 <script src="script.js"></script>
 
 
